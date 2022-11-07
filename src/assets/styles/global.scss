@@ -1,0 +1,25 @@
+@use "./variables/all" as variable;
+@import './resets';
+@import './fonts';
+@import 'mixins/_general';
+// Import Components styles
+@import './components/menu/menu-app.scss';
+
+* {
+    font-family: Oswald-Regular;
+    font-style: normal;
+    user-select: none;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Default Styles
+
+.flex {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+}
